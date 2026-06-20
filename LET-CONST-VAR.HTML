@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var // re-declared ho skata update bhi ho jayega
+      var age = 24;
+      console.log(age);
+      var age = 59;
+      console.log(age);
+      var age = 86;
+      console.log(age);
+
+      // Let //  variable cannot be re-declared but update possible a black scope of variable.
+      let birth = 24;
+      birth = 67; // AGR IDHAR LET LAGAO EROOR KYO KI re-declare nhi kr sake
+      birth = 89;
+      console.log(birth); //but values update ho
+
+      /// const ko na re-declare kar paoge n hi update na
+      const PI = 3.14;
+      //const PI=3.14;// na hi isko re declare
+      // PI=4.14;/// isko update bhi nhi kar pao
+      console.log(PI);
+
+      /// let // isme agar kisi var yni jaise a ko koi value nhi di aise hi print to undefined hoga
+      // agar jaise koi a ko value di to aa value aa jayregi
+      let a;
+     // a = 10;
+      console.log(a);
+
+      //const  // agr const ko likhna h to usko hamesha kahi na kahi value do yni initiliaze karo nhi to error aa gyi
+      const b=10;
+      console.log(a);
+    </script>
+  </body>
+</html>
