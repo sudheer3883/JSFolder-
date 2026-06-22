@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // divisble by 10 check number ///filter;-Kaam: Array me se condition ke hisab se elements ko select karta hai.
+      let arr = [1, 2, 30, 4, 50, 6, 7, 83, 670];
+      let num = arr.filter((x) => {
+        return x % 10 == 0;
+      });
+      console.log(num);
+
+      // multiply arr   // map;-Kaam: Array ke har element par operation karke naya array banata hai.
+      let arr1 = [1, 2, 30, 4, 50, 6, 7, 83, 670];
+      let nume = arr1.map((x) => {
+        return x * x;
+      });
+      console.log(nume);
+    </script>
+  </body>
+</html>

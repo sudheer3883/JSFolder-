@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // name function
+      function fun() {
+        console.log("helo");
+      }
+      fun();
+      // anonyms fdunction
+      //Definition: जिस Function का कोई नाम नहीं होता, उसे Anonymous Function कहते हैं।
+      const a = function () {
+        console.log("Hello");
+      };
+      a();
+      // Arrow Function
+
+      //Definition: => चिन्ह का उपयोग करके Function को छोटे और आसान तरीके से लिखना Arrow Function कहलाता है।
+      const b = () => {
+        console.log("Hello");
+      };
+      b();
+      // Function Expression
+      //जब किसी Function को एक Variable में Store किया जाता है, तो उसे Function Expression कहते हैं।
+      let c = function () {
+        console.log(10 + 20);
+      };
+      c();
+      ///Constructor Function
+      //Object बनाने और Initialize करने के लिए उपयोग किए जाने वाले Function को Constructor Function कहते हैं।
+      function Student(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      let s1 = new Student("Sudheer", "40");
+      console.log(s1);
+      //IIFE (Immediately Invoked Function Expression)
+      //ऐसा Function जो Define होते ही तुरंत Execute हो जाए, उसे IIFE कहते हैं।
+      (function () {
+        console.log("Run Immediately");
+      })();
+      //Callback Function
+    //  ऐसा Function जिसे किसी दूसरे Function के Argument के रूप में Pass किया जाता है, Callback Function कहलाता है।
+     function ch() {
+        console.log("ch wal function");
+      }
+      function abc(a) {
+        a();
+      }
+      abc(ch);
+    </script>
+  </body>
+</html>

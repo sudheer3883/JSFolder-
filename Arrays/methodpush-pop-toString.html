@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //methods 1.push and 2.pop 3.toString
+      //push
+      let item = ["potato", "mango", "litchi", "tomato"];
+      item.push("chips"); //push
+      console.log(item);
+
+      //pop
+      let items = ["potato", "mango", "litchi", "tomato"];
+      console.log(items);
+      let deleteditems = items.pop(); //pop
+      console.log(items);
+      console.log("deleted", deleteditems);
+
+      //toString   // arrayt to cnvert string
+      let food = ["potato", "mango", "litchi", "tomato"];
+
+      console.log(food);
+      console.log(food.toString());
+
+      let mark = [12, 13, 14, 15, 16, 17];
+      console.log(mark.toString());
+
+      // concat() join mult arrays
+      let marvelHeroes = ["thor", "spiderman", "ironman"];
+      let dcheroes = ["superman", "batman"];
+      let d = ["same", "vipin", "sonu"];
+
+      let heroes = marvelHeroes.concat(dcheroes, d);
+
+      console.log(heroes);
+
+      /// unshift
+      let marked = ["potato", "mango", "litchi", "tomato"];
+      marked.unshift("apple");
+      console.log(marked);
+
+      //shift
+      let marke = ["potato", "mango", "litchi", "tomato"];
+      marke.shift();
+      console.log(marke);
+
+      /// slice methods() // piece array (strat,endindx not count)
+      let veg = ["potato", "mango", "litchi", "tomato"];
+      console.log(veg);
+      // console.log(veg.slice(1, 3));
+      console.log(veg.slice(0, 3));
+
+      //splice  method change arrays(add,remove,replace)
+      //splice(strtidx,delCount ,newEl1...)
+      let splice = [1, 2, 3, 4, 5, 6, 7];
+
+      console.log(splice.splice(2, 2, 201, 102));
+      console.log(splice);
+
+      //add element
+      let s = [1, 2, 3, 4, 5, 6, 7];
+      console.log(s);
+
+      console.log(s.splice(2, 0, 101));
+
+      //del element
+      let t = [1, 2, 3, 4, 5, 6, 7];
+      console.log(t);
+
+      console.log(t.splice(2));
+    </script>
+  </body>
+</html>

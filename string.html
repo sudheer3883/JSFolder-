@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+
+  <body>
+    <script>
+      // Ek string variable
+      let str = "Hello World";
+
+      // length → total characters count (space bhi include hota hai)
+      console.log(str.length);
+      // Output: 11
+
+      // charAt(index) → kisi position ka character return karta hai
+      console.log(str.charAt(6));
+      // Output: W
+
+      // indexOf() → substring ka starting index return karta hai
+      console.log(str.indexOf("World"));
+      // Output: 6
+
+      // includes() → check karta hai string me word hai ya nahi (true/false)
+      console.log(str.includes("Hello"));
+      // Output: true
+
+      // slice(start, end) → string ka part nikalta hai (end include nahi hota)
+      console.log(str.slice(0, 5));
+      // Output: Hello
+
+      console.log(str.split(""));
+      // Output: World
+
+      // toUpperCase() → sab letters capital
+      console.log(str.toUpperCase());
+      // Output: HELLO WORLD
+
+      // toLowerCase() → sab letters small
+      console.log(str.toLowerCase());
+      // Output: hello world
+
+      // replace(old, new) → text replace karta hai
+      console.log(str.replace("World", "JavaScript"));
+      // Output: Hello JavaScript
+      console.log(str.trim().length);
+    </script>
+  </body>
+</html>

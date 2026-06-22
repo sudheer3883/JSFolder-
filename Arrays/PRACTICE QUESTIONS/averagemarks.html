@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  QS;--;for a given array with marks ofd students [85,97,44,37,76,60]find the average marks of entire claas
+      let m = [85, 97, 44, 37, 76, 60];
+      let sum = 0;
+      for (let val of m) {
+        sum = sum + val;
+      }
+      let avg = sum / m.length;
+      console.log(`avg marks of the class=${avg}`); //backtic or literal hi string ka hai ,isme quotes lagao to same as it is rakhega agr literal to vo value layega jab ${avg} iske andar tab
+    </script>
+  </body>
+</html>
