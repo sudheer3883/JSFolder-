@@ -216,4 +216,5 @@ object in javascript are the collection of methods and properties in js.
 ## Way to crteate and object 
 1. using constructor 
 ex-
-const a=nerw
+2.Using Literals 
+ex- const a= { }
