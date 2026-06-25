@@ -1,23 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <!-- <input type="text" onblur="sayHello()" />
-    <button onclick="sayHello()">click me</button>   -->
-    <button id="btn">click me</button>
+</head>
+<!-- <body> Dom is the dopcument kicheeje kochange karna hi dom -->
+   
+
+
+<!--first-->
+    <p id="p">Hello Everyone</p>
+   <button onclick="fun()">Click me !</button> 
+<!--first-->
+
+
+<!--second-->
+    <h1 id="h">hello sudheer</h1>
+    <!--second-->
     <script>
-      function sayHello() {
-        console.log("Heloow Everyone");
-      }
-      let a = document.getElementById("btn");
-      //  a.addEventListener("click", () => {
-      //  console.log("heyy");
-      // });
-      a.addEventListener("click", sayHello);
+        
+        //first
+       function fun(){
+            let a= document.getElementById("p")
+          a.innerText="Hello how are you"// jo element select kiya uske andar ka change ke liye 
+            a.style="color:red"
+            console.log(a.innerHTML);
+            //first
+ }
+
+ //2nd
+
+let b= document.getElementById("h")
+ console.log(b.innerHTML);
+//2nd
+            
+   
     </script>
-  </body>
+</body>
 </html>

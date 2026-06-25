@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box .one #inner P {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- QuerySelector   ;query selector ke andar aap css wale selector likh sakte ho aur isme slect kro ,agr do jagah p
+    jagh p hai to p ko log par karao query ke throught to upar wala hi p karega print -->
+    <div class="box">
+      <div class="one">
+        <div id="inner">
+          <p>Hello Sudheer</p>
+        </div>
+      </div>
+    </div>
+    <p>helo Sonu</p>
+     <button onclick="fun()">Click Me</button>
+    <script>
+      function fun() {
+        let a = document.querySelector(" .box .one #inner P");
+        console.log(a);
+      }
+    </script>
+  </body>
+</html>

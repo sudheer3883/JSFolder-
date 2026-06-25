@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- console.di(document.head); /// object print ke liye use dir ,document s ki properties and methods print ke liye hi use hota hai
+     // html mr javascript ka acess karne ka way hai dom  // dyanimic changes or manupulation -->
+    <style>
+      h1 {
+        color: red;
+      }
+      body {
+        background-color: yellowgreen;
+      }
+      button {
+        background-color: blue;
+        color: aliceblue;
+      }
+    </style>
+    <div>abcd</div>
+    <h3 class="heading">DOM demo by apna college</h3>
+    <h1 class="headings">DOM demo by apna college</h1>
+    <h2 class="headings">javascript</h2>
+    <h4 class="headings">Topic: Starter code</h4>
+    <p>Lets about dom concept in details</p>
+    <button>Click me</button>
+    <script>
+      let b = document.getElementById("heading"); //h1
+      console.dir(b);
+      let a = document.getElementsByClassName("headings");
+      console.dir(a);
+      console.log(a);
+    </script>
+  </body>
+  <html></html>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h">Heyyy</h1>
+    <button onclick="func()">click me</button>
+    <script>
+      function func() {
+        let a = document.getElementById("h");
+        //  a.setAttribute("style", "color:blue"); //powerful
+        a.style.color = "red";
+        a.style.backgroundColor = "yellow";
+        a.style.boxShadow = "5px 5px 5px 5px green";
+        a.innerHTML = "hellow sonu";
+        console.log(a);
+      }
+    </script>
+  </body>
+</html>
